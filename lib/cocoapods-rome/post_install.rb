@@ -117,6 +117,4 @@ Pod::HooksManager.register('cocoapods-rome', :post_install) do |installer_contex
   end
 
   copy_dsym_files(sandbox_root.parent + 'dSYM', configuration) if enable_dsym
-
-  build_dir.rmtree if build_dir.directory?
 end
